@@ -1,4 +1,9 @@
 import { useRef, useState } from "react";
+import MyComponent from "./components/MyComponent";
+import ComponentA from "./components/ComponentA";
+import { ComponentB } from "./components/ComponentB";
+import ComponentC, { ComponentD } from "./components/ComponentC";
+
 const App = () => {
   /* JSX */
   const element = (
@@ -60,6 +65,13 @@ const App = () => {
       <button onClick={btnSumNumber}> Count </button>
       <p>Count: {number}</p>
       <p>Count: {n}</p>
+
+      {/* COMPONENTS */}
+      <MyComponent></MyComponent>
+      <ComponentA></ComponentA>
+      <ComponentB></ComponentB>
+      <ComponentC></ComponentC>
+      <ComponentD></ComponentD>
     </>
   );
 };
