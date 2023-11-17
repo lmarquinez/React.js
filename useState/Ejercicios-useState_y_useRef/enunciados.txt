@@ -1,0 +1,9 @@
+Ahora modificaremos los ejercicios que vimos en la sección de useRef para utilizar useState a la hora de mostrar el resultado. Seguiremos utilizando useRef para la recogida de valores.
+
+1. Euros a dólares
+Hay que realizar un conversor de euros a dólares. Supondremos que un euro son dos dólares. El usuario introducirá un valor en euros y se mostrará un mensaje en pantalla con el correspondiente valor en dólares.
+
+2. Grados centígrados
+Hay que realizar un conversor de grados Centígrados a grados Fahrenheit.
+
+Para ello deberé multiplicar por 9/5 y sumar 32. Como todo el mundo sabe, 20 grados centígrados son 68 grados Farenheit.
