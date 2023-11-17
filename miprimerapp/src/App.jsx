@@ -25,6 +25,15 @@ const App = () => {
     resultRef.current.innerHTML = nameRef.current.value;
     alert(txt);
   };
+
+  /* HOOK useState() */
+  const [n, setN] = useState(0);
+  let number = 1;
+  const btnSumNumber = () => {
+    number = number + 1;
+    alert(number);
+    setN(n + 1);
+  };
   return (
     <>
       <div>
@@ -46,6 +55,11 @@ const App = () => {
         <button onClick={btnClick}> Click </button>
         <p ref={resultRef}></p>
       </div>
+
+      {/* HOOK useState() */}
+      <button onClick={btnSumNumber}> Count </button>
+      <p>Count: {number}</p>
+      <p>Count: {n}</p>
     </>
   );
 };
