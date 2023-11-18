@@ -1,0 +1,82 @@
+1. Ejercicio props
+___________________________
+
+En este ejercicio, crearemos un comnponente y lo importaremos en el componente principal App.
+
+1. Crear el archivo Book.jsx en la carpeta ./src/components.
+
+2. Después copia este código y complétalo para que devuelva el texto “Viaje a la luna”:
+
+const Book = () =>(
+   // Aquí falta código
+) 
+export default Book;
+Ahora haremos uso del componente Book dentro App.js. Completa el componente App.js:
+
+import Book from './book';
+const App = () => {
+    return (
+        <div><Book/>
+        </div>
+    );
+};
+
+export default App;
+
+3. En lugar de harcodear (escribir directamente) el valor del componente en su interior, vamos a pasarselo como prop desde el componente App.
+
+El resultado debería seguir siendo el mismo. Lo único que cambiará será la implementación del código.
+
+En el componente Appi, usaremos este código:
+
+<Book book="Viaje a la luna" />
+
+4. Vamos a leer los libros que mostrará nuestra aplicación desde un fichero JSON. Para ello, importaremos dicho fichero en nuestra aplicación y lo recorreremos con una estructura .map.
+
+Este es el JSON con el array de libros:
+
+./src/data/books.json
+
+[
+  {
+    "title": "Viaje a la luna",
+    "author": "Julio Verne"
+  },
+  {
+    "title": "El médico",
+    "author": "Noah Gordon"
+  }
+]
+Para importarlo, usaremos:
+
+./src/App.js
+
+import books from './data/books.json';
+
+
+2. Otro ejercicio de props
+____________________________
+
+Crear un componente llamado Post que debe imprimir el valor de las props postTile, author, y contenido (children).
+
+const App = () => <div>
+        <Post postTitle="Viaje a la luna" author="Julio Verne">Texto 1</Post>
+        <Post postTitle="Viaje a Marte" author="Pablo Mon">Texto 2</Post>
+    </div>;
+
+export default App;
+
+
+2. Ejercicios de componentes modificados.
+____________________________
+
+
+Ahora modificaremos los ejercicios que vimos en las secciones anteriores. Vamos a modificar el componente Form para que solamente reciba el valor y pinte la respuesta. Para ello, le pasaremos el valor mediante props. Toda la lógica estará en el componente App.
+
+2.1 Convertir euros en dólares.
+2.2 Calcular grados Fahrenheit.
+2.3 Calcular la superficie de un rectángulo.
+
+3. Ejercicio coste hotel.
+____________________________
+
