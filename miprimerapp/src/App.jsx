@@ -39,6 +39,10 @@ const App = () => {
     alert(number);
     setN(n + 1);
   };
+
+  /* RENDERIZADO CONDICIONAL */
+  const [isVisible, setIsVisible] = useState(true);
+
   return (
     <>
       <div>
@@ -72,6 +76,10 @@ const App = () => {
       <ComponentB></ComponentB>
       <ComponentC></ComponentC>
       <ComponentD></ComponentD>
+
+      {/* RENDERIZADO CONDICIONAL */}
+      <button onClick={() => setIsVisible(!isVisible)}>Toggle</button>
+      {isVisible ? <componentA /> : <componentB />}
     </>
   );
 };
