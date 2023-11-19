@@ -11,7 +11,15 @@ const Router = () => (
         <Route path="" element={<Home />}></Route>
         <Route path="/shop" element={<Shop />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
-        <Route path="*" element={<div>Error 404</div>} />
+        <Route
+          path="*"
+          element={
+            <div>
+              <h1>404 - Not Found</h1>
+              <p>Sorry, the page you are looking for might not exist.</p>
+            </div>
+          }
+        />
       </Routes>
     </Layout>
   </BrowserRouter>
