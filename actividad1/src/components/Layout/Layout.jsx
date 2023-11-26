@@ -7,7 +7,7 @@ const Layout = ({ children }) => (
     <nav className="navbar navbar-dark bg-dark fixed-top">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
-          Film App
+          React Routing App
         </a>
         <button
           className="navbar-toggler"
@@ -25,7 +25,7 @@ const Layout = ({ children }) => (
         >
           <div className="offcanvas-header">
             <h5 className="offcanvas-title" id="offcanvasDarkNavbarLabel">
-              Film App
+              React Routing App
             </h5>
             <button
               type="button"
