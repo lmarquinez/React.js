@@ -1,45 +1,14 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { getProducts } from "../app/api";
-import styled from "styled-components";
+import {
+  ShopWrapper,
+  Input,
+  Button,
+  ProductList,
+  ProductItem,
+  ProductImage,
+} from "../assets/style/styles.js";
 import "../App.css";
-
-const ShopWrapper = styled.div`
-  text-align: center;
-  margin: 20px;
-`;
-
-const Input = styled.input`
-  padding: 8px;
-  margin-right: 8px;
-`;
-
-const Button = styled.button`
-  padding: 8px 16px;
-  background-color: #3498db;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-`;
-
-const ProductList = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 20px;
-  overflow: scroll;
-  height: 58vh;
-`;
-
-const ProductItem = styled.div`
-  width: 200px;
-  margin: 10px;
-  text-align: center;
-`;
-
-const ProductImage = styled.img`
-  max-width: 100%;
-  height: auto;
-`;
 
 const Shop = () => {
   const [products, setProducts] = useState([]);
