@@ -5,8 +5,8 @@ const HomeConfig = {
   name: "Home",
   component: Home,
   options: {
-    headerTitle: "StackNavigation",
-    headerShown: true, // Ocultar la cabecera
+    headerTitle: "Activity 3",
+    headerShown: true,
     tabBarIcon: ({ focused }) => (
       <Icon name="home" size={30} color={focused ? "#13797e" : "gray"} />
     ),

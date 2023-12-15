@@ -2,17 +2,15 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 import MainConfig from "./MainConfig";
 import HomeConfig from "../../../screens/Home/HomeConfig";
-import HomeStack from "../../stacks/HomeStack/HomeStack";
-import AddTaskConfig from "../../../screens/AddTask/AddTaskConfig";
-import ViewTasksConfig from "../../../screens/ViewTasks/ViewTasksConfig";
+import TasksConfig from "../../../screens/Tasks/TasksConfig";
+import TaskStack from "../../stacks/TaskStack/TaskStack";
 
 const BottomTab = createBottomTabNavigator();
 
 const Main = () => (
   <BottomTab.Navigator {...MainConfig}>
-    <BottomTab.Screen {...HomeConfig} component={HomeStack} />
-    <BottomTab.Screen {...AddTaskConfig} />
-    <BottomTab.Screen {...ViewTasksConfig} />
+    <BottomTab.Screen {...HomeConfig} />
+    <BottomTab.Screen {...TasksConfig} component={TaskStack} />
   </BottomTab.Navigator>
 );
 
