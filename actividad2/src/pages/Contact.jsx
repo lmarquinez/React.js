@@ -1,4 +1,4 @@
-import logo from "../../../actividad1/src/assets/image/logo.svg";
+import logo from "../assets/image/logo.svg";
 import "../App.css";
 
 const Contact = () => {
