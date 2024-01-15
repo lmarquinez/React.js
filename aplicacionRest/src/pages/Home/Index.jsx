@@ -11,7 +11,6 @@ const Home = () => {
 
   useEffect(() => {
     getPeople(id).then((res) => {
-      console.log(res);
       setPeople(res.data.results);
       setPeopleAmount(res.data.count);
     });
@@ -38,7 +37,7 @@ const Home = () => {
       <div>
         {peopleAmount &&
           getPaginationLinks(peopleAmount, 10).map((obj, i) => (
-            <PageLink key={i} to={"/swapi/" + obj}>
+            <PageLink key={i} to={"/" + obj}>
               {obj} &nbsp;
             </PageLink>
           ))}

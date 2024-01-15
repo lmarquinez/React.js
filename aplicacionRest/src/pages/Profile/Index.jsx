@@ -17,7 +17,6 @@ const Profile = () => {
   useEffect(() => {
     getCharacterById(id).then((res) => {
       const { films, species } = res.data;
-      console.log(res.data);
       setCharacterData(res.data);
       // Promise.all devuelve una promesa que se cumplirá cuando todas las promesas del array que recibe como parámetro se haya cumplido.
       Promise.all(films.map((obj) => getFilmFromId(getIdFromUrl(obj)))).then(
