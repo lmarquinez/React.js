@@ -44,7 +44,7 @@ const RickyApi = () => {
         ))}
       </div>
       <div>
-        <h1>FAVORITES:</h1>
+        <h1>My List:</h1>
         {favorites.map((character) => (
           <Card
             key={character.id}
